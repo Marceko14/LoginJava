@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Iniciar sesión</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="theme-color" content="#ff5733">
+    
+    <!-- Fuente Poppins para todo el cuerpo -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/icono.ico" type="image/x-icon">   
+</head>
+<body>
+    <div class="container">
+        <form class="form" method="post" action="#">
+            <h1>Iniciar sesión</h1>
+            <div class="input-container">
+                <label for="user">Usuario</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i> <!-- Icono para el campo usuario -->
+                    <input type="text" name="user" id="user" class="form-group" placeholder="Nombre de usuario" required>
+                </div>
+            </div>
+            <div class="input-container">
+                <label for="password">Clave</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-lock"></i> <!-- Icono para el campo contraseña -->
+                    <input type="password" name="password" id="password" class="form-group" placeholder="Contraseña" required>
+                </div>
+            </div>
+            <div>
+                <!-- Checkbox para mostrar/ocultar la contraseña -->
+                <label>
+                    <input type="checkbox" id="showPassword"> Mostrar contraseña
+                </label>
+            </div>
+            <button class="sesion" type="submit">Iniciar sesión</button>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Función para mostrar/ocultar la contraseña
+        document.getElementById('showPassword').addEventListener('change', function() {
+            var passwordField = document.getElementById('password');
+            if (this.checked) {
+                passwordField.type = 'text'; // Mostrar la contraseña
+            } else {
+                passwordField.type = 'password'; // Ocultar la contraseña
+            }
+        });
+    </script>
+</body>
+</html>

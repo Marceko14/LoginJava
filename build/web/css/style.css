@@ -1,0 +1,129 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+background: radial-gradient(circle, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 25px 30px; /* Padding reducido */
+    width: 100%;
+    max-width: 420px; /* Ancho máximo más pequeño */
+}
+
+/* Estilo del formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado reducido entre los campos */
+}
+
+/* Estilo de los títulos */
+h1 {
+    font-size: 1.5rem; /* Título más pequeño */
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px; /* Reducido margen inferior */
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-size: 0.9rem; /* Tamaño de fuente pequeño */
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 5px; /* Margen pequeño */
+}
+
+/* Estilo de los inputs */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #fafafa;
+}
+
+.input-wrapper i {
+    margin-right: 8px; /* Espaciado entre el icono y el input */
+    color: #888;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none; /* El borde es ahora controlado por el contenedor */
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent; /* Fondo transparente para el input */
+    width: 100%; /* Los inputs ocupan el 100% del ancho */
+    
+    outline: none; /* Sin contorno */
+}
+
+/* Estilo cuando los inputs están enfocados */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ff5733; /* Rojo suave */
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.6); /* Sombra sutil */
+    background-color: #fff;
+}
+
+/* Estilo del botón */
+button.sesion {
+    background-color: #ff5733; /* Rojo suave */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem; /* Tamaño de fuente del botón más pequeño */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 100%; /* Botón ocupa el 100% del ancho */
+}
+
+button.sesion:hover {
+    background-color: #e04e2a; /* Rojo más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Estilo del enlace "Olvidaste tu contraseña" */
+a {
+    font-size: 0.85rem; /* Tamaño de fuente pequeño */
+    color: #ff5733;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e04e2a; /* Rojo más oscuro al pasar el cursor */
+}
+
+/* Estilo de los iconos sociales */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icons a {
+    font-size: 1.5rem; /* Tamaño de iconos más pequeño */
+    color: #555;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #ff5733; /* Rojo cuando el cursor pasa sobre los iconos */
+}
